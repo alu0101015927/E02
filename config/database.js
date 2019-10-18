@@ -1,4 +1,5 @@
-const databaseHost = process.env.DATABASE_HOST.trim();
+//const databaseHost = process.env.DATABASE_HOST.trim();
+const databaseHost = "172.16.23.3"
 const databasePort = process.env.DATABASE_PORT.trim();
 const databaseUser = process.env.DATABASE_USER.trim();
 const databasePassword = process.env.DATABASE_PASSWORD.trim();
