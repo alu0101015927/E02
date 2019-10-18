@@ -1,3 +1,3 @@
 # E02
-<b>Nombres colaboradores</b>
-Alejandro González GOnzález
+<b>Nombres colaboradores</b> <br />
+Alejandro González González
