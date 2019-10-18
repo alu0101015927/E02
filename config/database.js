@@ -1,11 +1,11 @@
 //const databaseHost = process.env.DATABASE_HOST.trim();
-const databaseHost = "172.16.23.3";
+const databaseHost = "172.16.23.3" //this is our server's ip
 //const databasePort = process.env.DATABASE_PORT.trim();
 //const databaseUser = process.env.DATABASE_USER.trim();
 //const databasePassword = process.env.DATABASE_PASSWORD.trim();
 //const databaseName = process.env.DATABASE_NAME.trim();
 //const databaseConnectionOpts = process.env.DATABASE_CONNECTION_OPTIONS.trim();
-const databasePort = "27017";
+const databasePort = "27017"; //MongoDB port
 const databaseUser = "myTester";
 const databasePassword = "1111";
 const databaseName = "test";
