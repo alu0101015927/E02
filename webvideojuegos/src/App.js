@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import NavBar from './navbar/navbar';
 import Content_frontpage from './content_frontpage/content_frontpage';
@@ -13,15 +13,14 @@ class App extends React.Component {
     return (
       <div className="pagina-principal">
         <header className="App-header">
-          <NavBar/>
-          <h1>Videojuegos</h1>
+        <h1>Videojuegos</h1>
+        <NavBar/>
         </header>
         <Content_frontpage/>
       <Page_footer/>
       </div>
     );
   }
-  
 }
 
 export default App;

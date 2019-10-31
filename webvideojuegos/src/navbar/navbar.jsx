@@ -30,7 +30,7 @@ class NavBar extends Component {
                         <div class="row" id="topbarsearch">
                            <div class="input-field col s6 s12 red-text">
                               <i class="white-text material-icons prefix"></i>
-
+                              <input type="text" aria-label="barra de navegacion" placeholder="search" id="autocomplete-input" class="autocomplete white-text" onfocus="toggleFocus(this)" onblur="toggleFocus(this)"/>
                            </div>
                         </div>
                      </div>
