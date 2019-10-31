@@ -1,0 +1,3 @@
+[submodule "web-videojuegos"]
+	path = web-videojuegos
+	url = https://github.com/react-boilerplate/react-boilerplate.git
