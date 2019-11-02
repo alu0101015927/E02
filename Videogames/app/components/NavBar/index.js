@@ -23,7 +23,14 @@ function NavBar() {
       <HeaderLink to="/iniciar">
         <FormattedMessage {...messages.iniciar} />
       </HeaderLink>
-      <SearchBar />
+      <SearchBar
+        type="text"
+        arialabel="Buscador"
+        placehold="search"
+        className1="white-text material-icons prefix"
+        className2="input-field red-text"
+        className3="autocomplete white-text"
+      />
     </div>
   );
 }

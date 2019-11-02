@@ -3,8 +3,9 @@ import React from 'react';
 
 import NewsElement from '../NewsElement';
 // import messages from './messages';
+import data from './data';
 
-function NewsList(props) {
+function NewsList() {
   return (
     <div>
       <ul
@@ -13,26 +14,18 @@ function NewsList(props) {
         onFocus="toggleFocus(this)"
         onBlur="toggleFocus(this)"
       >
-        {props.src.map((src, srcIndex) => (
+        {data.map((src, srcIndex) => (
           <NewsElement
             image_src={src}
-            image_alt={props.alt[srcIndex]}
-            reference={props.ref[srcIndex]}
-            news_con={props.content[srcIndex]}
-            message={props.message[srcIndex]}
+            image_alt={data.alt[srcIndex]}
+            reference={data.ref[srcIndex]}
+            news_con={data.content[srcIndex]}
+            message={data.message[srcIndex]}
           />
         ))}
       </ul>
     </div>
   );
 }
-
-NewsList.propTypes = {
-  src: ['', '', '', '', ''],
-  alt: ['', '', '', '', ''],
-  ref: ['', '', '', '', ''], // ruta
-  message: ['', '', '', '', ''], // titulo videojuego
-  content: ['', '', '', '', ''],
-};
 
 export default NewsList;

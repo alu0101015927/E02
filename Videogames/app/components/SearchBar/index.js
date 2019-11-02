@@ -1,5 +1,5 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 function SearchBar(props) {
   return (
@@ -10,21 +10,18 @@ function SearchBar(props) {
         aria-label={props.arialabel}
         placeholder={props.placehold}
         className={props.className3}
-        onFocus={props.on}
-        onBlur={props.on}
       />
     </div>
   );
 }
 
 SearchBar.propTypes = {
-  type: 'text',
-  arialabel: 'Buscador',
-  placehold: 'search',
-  className1: 'white-text material-icons prefix',
-  className2: 'input-field red-text',
-  className3: 'autocomplete white-text',
-  on: 'toggleFocus(this)',
+  type: PropTypes.string,
+  arialabel: PropTypes.string,
+  placehold: PropTypes.string,
+  className1: PropTypes.string,
+  className2: PropTypes.string,
+  className3: PropTypes.string,
 };
 
 export default SearchBar;
