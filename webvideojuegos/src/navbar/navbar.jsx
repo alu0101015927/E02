@@ -19,6 +19,8 @@ class NavBar extends Component {
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down" id="barra" onfocus={this.state.on_focus} onblur={this.state.on_focus}>
                <Navbar_element href={this.state.href[0]} role={this.state.role} tabindex={this.state.tabindex} aria-expanded={this.state.false_aria_expanded} onfocus={this.state.on_focus} onblur={this.state.on_focus}>Ultimas novedades</Navbar_element>
+               <li><a href="videojuegos.html">Lista de videojuegos</a></li>
+               
                <Navbar_element href={this.state.href[0]} role={this.state.role} tabindex={this.state.tabindex} aria-expanded={this.state.false_aria_expanded} onfocus={this.state.on_focus} onblur={this.state.on_focus}>Buscar juegos</Navbar_element>
                <Navbar_element href={this.state.href[0]} role={this.state.role} tabindex={this.state.tabindex} aria-expanded={this.state.false_aria_expanded} onfocus={this.state.on_focus} onblur={this.state.on_focus}>..</Navbar_element>
                <Navbar_element href={this.state.href[0]} role={this.state.role} tabindex={this.state.tabindex} aria-expanded={this.state.false_aria_expanded} onfocus={this.state.on_focus} onblur={this.state.on_focus}>Registrarse</Navbar_element>

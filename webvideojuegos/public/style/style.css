@@ -1,0 +1,459 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+nav{
+   width: 100%;
+   background-color: #abb2b9;
+   margin: 0;
+ }
+ nav ul {
+   margin-top:0;
+   padding: 0 1%;
+   display: inline-table;
+   background: linear-gradient(top, #e0e0e0 0%, #686868 100%);
+ }
+.mapa-web{
+   color: #184FEB;
+ }
+
+ nav ul a{
+   font-size: 15px;
+ }
+ h1{
+    text-align: center;
+    font-size:350%;
+    color:#FE3C00;
+    position: relative;
+    top: -5.1%;
+    font-family: 'Merriweather', serif;
+ }
+
+ body {
+   padding: 0%;
+   margin: 0%;
+ }
+ footer iframe {
+   width: "100";
+   height: "75";
+
+ }
+ html {
+   margin-top:0%;
+   padding:0%;
+ }
+
+ .buscador-libro{
+   color: #FE3C00;
+ }
+
+ ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #769DE8;
+  opacity: 1; /* Firefox */
+}
+
+.card-image{
+  height: 300px;
+  width: 100%;
+}
+.card:hover .card-image img {
+  width: 100%;
+  height: 100%;
+}
+.card-title{
+  text-align: center;
+
+}
+ #background{
+   background-image : url("../img/books-wallpaper-5.jpg");
+   background-size : 100%;
+   width: 100%;
+   height: 20em;
+ }
+
+ .titulo-aventura{
+    text-align: left;
+ }
+
+ #categorias-libros{
+   text-align: center;
+ }
+
+ #categorias{
+   margin: auto;
+   width: 60%;
+ }
+
+
+.tabs img{
+    width:30%;
+    height:30%;
+    size: 10%;
+}
+.tabul{
+    height:30%;
+}
+
+#elemento-libro{
+    height:50%;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+#elemento-libro img{
+  margin: 0;
+  padding: 0;
+  height: inherit;
+}
+.tabs{
+    height:30%;
+}
+
+#libros{
+    height:35%;
+}
+
+#elemento-libro span{
+    font-family: "Sans Serif";
+}
+
+
+.carousel {
+    overflow: hidden;
+    transform-origin: 0% 50%;
+    position:relative;
+    width:100%;
+}
+.row{
+  margin-right: 0;
+  margin-left: 0;
+}
+#row-aventuras{
+    margin: 5%;
+}
+#row-policiaca{
+  margin: 5%;
+}
+
+.page-footer {
+    bottom: 0;
+    width: 100%;
+    min-height: 150px;
+}
+
+.col s3 m3 l3 xl3{
+    height: 30%;
+}
+
+#id-circe{
+    height:80%;
+}
+
+#id-proposito{
+    height:80%;
+}
+
+#id-frontera{
+    height:80%;
+}
+#id-sofia{
+  height:80%;
+}
+
+.brand-logo{
+    width: 30%;
+    height: inherit;
+}
+#logo-pag{
+  width:inherit;
+  height: inherit;
+}
+
+#nombres,#email {
+
+    overflow-y: scroll;
+    height: 8%;
+    resize: none;
+}
+#boton_registro{
+
+    margin-left: 24%;
+    margin-bottom: 3%;
+
+}
+
+.titulo-anadir-libro{
+  text-align: center;
+  font-size: 25px;
+  margin:20px;
+}
+.carousel-item img{
+  height: 400px;
+  width: auto;
+
+}
+#recomandados-novela-negra{
+  background-image: url("https://bit.ly/2QYBTSh");
+  overflow: hidden;
+}
+
+#novedades-libros{
+  background-image: url("https://static5planetadelibroscom.cdnstatics.com/usuaris/web_canales_tematicos/fotos/1/fondo/132_2_fondo_recomendados.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
+
+}
+#botones-libros{
+  margin: 10px;
+  position: relative;
+  right:15%;
+}
+#botones-libros button{
+  margin: 5px;
+}
+.formulario ::-moz-placeholder{
+    color: grey;
+}
+
+.formulario ::-webkit-input-placeholder{
+    color: grey;
+}
+
+.formulario p{
+  text-align: left;
+
+}
+#submit, #reset{
+    position: relative;
+    left: 20%;
+}
+#texto-oblig{
+    text-align: center;
+}
+
+.text-libro{
+    font-size: 200%;
+}
+
+[role="button"]:hover,
+[role="button"]:focus,
+[role="button"]:active {
+   background-color: white;
+   color: navy;
+}
+
+[role="menuitem"]:hover,
+[role="menuitem"]:focus,
+[role="menuitem"]:active {
+   background-color: white;
+   color: navy;
+}
+
+@media (max-width: 480px ){
+    p{
+        font-size: 50%;
+    }
+    .tabs img{
+        width:100%;
+        height:100%;
+        size: 10%;
+    }
+}
+@media (max-width: 767px) {
+    p{
+        font-size: 50%;
+    }
+    .tabs img{
+        width:100%;
+        height:100%;
+        size: 10%;
+    }
+
+}
+@media (max-width: 1199px ){
+  #texto-oblig{
+    font-size:20px;
+  }
+  .anadir-form{
+    font-size: 15px;
+  }
+  .grey-text {
+    font-size:15px;
+  }
+  .lugar{
+    font-size:15px;
+  }
+  .titulo-login-libro{
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    p{
+        font-size: 50%;
+    }
+    .tabs img{
+        width:25%;
+        height:25%;
+        size: 10%;
+    }
+ }
+#miiframe{
+    width: 100%;
+    height: 100%;
+
+
+}
+
+iframe {
+    width: 100%;
+    height: 25%;
+  }
+
+/* CSS pantalla 768px o superior */
+/*
+  @media (min-width: 768px) {
+    .mi-iframe {
+      width: 500px;
+      height: 350px;
+    }
+  }*/
+
+  body {
+    -webkit-animation: bugfix infinite 1s;
+  }
+
+  @-webkit-keyframes bugfix {
+    from {
+      padding: 0;
+    }
+    to {
+      padding: 0;
+    }
+  }
+  input[type=checkbox] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  label {
+    /*display: none;*/
+    cursor: pointer;
+    user-select: none;
+  }
+
+  nav[role="custom-dropdown"] {
+    position: relative;
+    width: 100%;
+  }
+
+  ::-webkit-input-placeholder {
+    text-align: center;
+ }
+
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;
+ }
+
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;
+ }
+
+ :-ms-input-placeholder {
+    text-align: center;
+ }
+
+  @media screen and (max-width: 800px) {
+    html,
+    body {
+    margin: 0;
+  }
+
+    #descripcion{
+      font-size: 1em;
+    }
+    #direccion{
+      font-size:1em;
+    }
+    #sinopsis{
+      font-size:1em;
+    }
+    .titulo{
+      text-align: center;
+      font-size:2.5em;
+    }
+    #background{
+      width: 100%;
+      height: 10em;
+    }
+
+    .brand-logo{
+      width: inherit;
+      height: inherit;
+  }
+
+  #logo-pag{
+    width: 50%;
+    height: inherit;
+    position: relative;
+    right: 50%;
+  }
+
+  #elemento-libro{
+    height: inherit;
+    width: 30%;
+    display:block;
+  }
+
+  .titulo-policiaca{
+    text-align: left;
+  }
+
+  #libros-policiaca #elemento-libro{
+    height: inherit;
+    width: 50%;
+  }
+    nav[role="custom-dropdown"] ul {
+      display: none;
+      height: 100%;
+    }
+    nav[role="custom-dropdown"] label {
+      position: relative;
+      display: block;
+      width: 100%;
+      min-height: 2.25em;
+      padding: .45em;
+      font-size: 1.1em;
+      margin: 0;
+    }
+    nav[role="custom-dropdown"] label:after {
+      position: absolute;
+      right: .25em;
+      top: 0;
+      content: "\2261";
+      font-size: 1.8em;
+    }
+    nav[role="custom-dropdown"] input[type=checkbox]:checked ~ label:after {
+      color: #222;
+    }
+    nav[role="custom-dropdown"] input[type=checkbox]:checked ~ ul {
+      display: block;
+    }
+    nav[role="custom-dropdown"] input[type=checkbox]:checked ~ ul > li {
+      width: 100%;
+      opacity: 50%;
+      text-align: left;
+    }
+    nav[role="custom-dropdown"] input[type=checkbox]:checked ~ ul > li:after {
+      position: absolute;
+      right: .25em;
+      content: "\203A";
+      font: bold 1.4em sans-serif;
+    }
+  }

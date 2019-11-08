@@ -5,10 +5,18 @@ class Page_footer extends Component{
     state = {}
 
 
+
     render(){
+      const style = {
+        background_color: '#cccccc',
+        width: '770px',
+        text_align: 'center',
+        clear: 'both',
+      }
+
         return(
 
-        <footer class="page-footer">
+        <footer style={style} class="page-footer">
             <div class="container">
                 <div class="center row">
                     <div class="col l4 s12">

@@ -13,6 +13,7 @@ class App extends React.Component {
     return (
       <div className="pagina-principal">
         <header className="App-header">
+        <link rel="stylesheet" type="text/css" href="style/style.css"/>
         <h1>Videojuegos</h1>
         <NavBar/>
         </header>
