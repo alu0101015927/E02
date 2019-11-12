@@ -16,8 +16,6 @@ function NewsElement(props) {
         href={props.reference}
         tabIndex={props.tabs}
         aria-expanded={props.ariaexp}
-        onFocus={props.on}
-        onBlur={props.on}
       >
         <ALINK href={props.reference}>
           <Img src={props.image_src} alt={props.image_alt} />
@@ -46,7 +44,6 @@ NewsElement.propTypes = {
   news_con: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
     .isRequired,
   message: PropTypes.string.isRequired,
-  on: 'toggleFocus(this)',
 };
 
 export default NewsElement;

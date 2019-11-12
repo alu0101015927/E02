@@ -3,22 +3,23 @@ import React from 'react';
 
 import ElementVideogame from '../ElementVideogame';
 // import messages from './messages';
+import data from './data';
 
-function VideoGamescategory(props) {
+function Videogameonsale() {
   return (
     <div>
       <ul
-        id="libros"
+        id="videogames"
         className="tabs tab-demo z-depth-1"
         onFocus="toggleFocus(this)"
         onBlur="toggleFocus(this)"
       >
-        {props.src.map((src, srcIndex) => (
+        {data.map((src, srcIndex) => (
           <ElementVideogame
             image_src={src}
-            image_alt={props.alt[srcIndex]}
-            reference={props.ref[srcIndex]}
-            message={props.message[srcIndex]}
+            image_alt={data.alt[srcIndex]}
+            reference={data.ref[srcIndex]}
+            message={data.message[srcIndex]}
           />
         ))}
       </ul>
@@ -26,11 +27,4 @@ function VideoGamescategory(props) {
   );
 }
 
-VideoGamescategory.propTypes = {
-  src: ['', '', '', ''],
-  alt: ['', '', '', ''],
-  ref: ['', '', '', ''], // ruta
-  message: ['', '', ''], // titulo videojuego
-};
-
-export default VideoGamescategory;
+export default Videogameonsale;
