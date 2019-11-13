@@ -16,7 +16,6 @@ export default function HomePage() {
   return (
     <div>
       <Header />
-      <FrontContent />
       <Footer />
     </div>
   );
