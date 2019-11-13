@@ -23,7 +23,6 @@ function NavBar() {
       <HeaderLink to="/iniciar">
         <FormattedMessage {...messages.iniciar} />
       </HeaderLink>
-      <SearchBar />
     </div>
   );
 }
