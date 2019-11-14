@@ -3,7 +3,6 @@ import { FormattedMessage } from 'react-intl';
 
 import HeaderLink from '../Header/HeaderLink';
 import messages from './messages';
-import SearchBar from '../SearchBar';
 
 function NavBar() {
   return (
@@ -23,6 +22,7 @@ function NavBar() {
       <HeaderLink to="/iniciar">
         <FormattedMessage {...messages.iniciar} />
       </HeaderLink>
+
     </div>
   );
 }

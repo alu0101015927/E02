@@ -9,7 +9,6 @@ import React from 'react';
 // import { FormattedMessage } from 'react-intl';
 // import messages from './messages';
 import Footer from '../../components/Footer';
-import FrontContent from '../../components/FrontContent';
 import Header from '../../components/Header';
 
 export default function HomePage() {
