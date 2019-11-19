@@ -9,18 +9,24 @@ import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import Box from '@material-ui/core/Box';
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 function Footer() {
   return (
     <Wrapper>
       <section>
-      <Box color="primary.main" bgcolor="text.hint">
+      <Box component="span" m={1} color="primary.main" bgcolor="text.hint">
 
         <FormattedMessage {...messages.about} />
 
       </Box>
       </section>
       <section>
+        <CssBaseline />
+        <Container fixed>
+          <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh' }} />
+        </Container>
+
         <FormattedMessage
           {...messages.contacto}
           values={{
