@@ -18,60 +18,86 @@ function Footer() {
       <CssBaseline />
 
       <Grid container spacing={1}>
-
         <Grid container item xs={12} spacing={3}>
-          <Grid item xs={4}>
+          <Grid item xs={6}>
+            <Typography color="red" align="center" clone>
+              Quienes somos
+            </Typography>
+          </Grid>
+          <Grid item xs={6}>
+            <Typography color="red" align="center" clone>
+              Ubicacion
+            </Typography>
+          </Grid>
+        </Grid>
+        <Grid container item xs={12} spacing={3}>
+          <Grid item xs={6}>
             <section>
               <Box component="span" m={1} color="primary.main" bgcolor="text.hint">
-
                 <FormattedMessage {...messages.about} />
-
               </Box>
             </section>
+          </Grid>
+          <Grid item xs={6}>
             <section>
-              <FormattedMessage
-                {...messages.contacto}
-                values={{
-                  icon1: (
-                    <Link href="https://twitter.com/">
-                      <i className="fab fa-twitter" />
-                    </Link>
-                  ),
-                  icon2: (
-                    <A href="https://instagram.com/">
-                      <i className="fab fa-instagram" />
-                    </A>
-                  ),
-                  icon3: (
-                    <A href="https://linkedin.com/">
-                      <i className="fab fa-linkedin" />
-                    </A>
-                  ),
-                }}
+              <iframe
+                align="center"
+                title="Mapa"
+                src="https://bit.ly/2JHjk2C"
+                frameBorder="0"
+                style={{ border: '0' }}
+                allowFullScreen
               />
             </section>
           </Grid>
-
-
-          <Grid item xs={4}>
-            <FormattedMessage
-              {...messages.map}
-              values={{
-                ubic: (
-                  <iframe
-                    title="Mapa"
-                    src="https://bit.ly/2JHjk2C"
-                    frameBorder="0"
-                    style={{ border: '0' }}
-                    allowFullScreen
-                  />
-                ),
-                ubic1: <i className="fas fa-map-marker-alt" />,
-              }}
-            />
+        </Grid>
+        <Grid container item xs={12} spacing={3}>
+          <Grid item xs={6}>
+            <section>
+              <Typography align="center"> Contacto </Typography>
+            </section>
           </Grid>
-
-          <Grid item xs={4}>
+          <Grid item xs={6}>
+            <section>
+              <Typography align="center">Camino San Francisco de Paula<i className="fas fa-map-marker-alt" />
+              </Typography>
+            </section>
+          </Grid>
+        </Grid>
+        <Grid container item xs={12} spacing={3}>
+          <Grid item xs={6}>
+            <section>
+              <Link href="https://twitter.com/">
+                <Typography align="center"> Twitter </Typography>
+                <i className="fab fa-twitter" />
+              </Link>
+            </section>
+          </Grid>
+        </Grid>
+        <Grid container item xs={12} spacing={3}>
+          <Grid item xs={6}>
+            <section>
+              <Link href="https://instagram.com/">
+                <Typography align="center"> Instagram </Typography>
+                <i className="fab fa-instagram" />
+              </Link>
+            </section>
+          </Grid>
+        </Grid>
+        <Grid container item xs={12} spacing={3}>
+          <Grid item xs={6}>
+            <section>
+              <Link href="https://linkedin.com/">
+                <Typography align="center"> LinkedIn </Typography>
+                <i className="fab fa-linkedin" />
+              </Link>
+            </section>
+          </Grid>
+        </Grid>
+        <Grid container item xs={12} spacing={3}>
+          <Grid item xs={9}>
+          </Grid>
+          <Grid item xs={3}>
             <section>
               <Typography color="red" align="center" clone>
                 <FormattedMessage color="red" align="center" {...messages.licencia} />
@@ -79,6 +105,7 @@ function Footer() {
             </section>
           </Grid>
         </Grid>
+
       </Grid>
     </Wrapper>
   );
