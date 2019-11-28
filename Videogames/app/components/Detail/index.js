@@ -1,27 +1,26 @@
 import React from 'react';
-import Wrapper from './Wrapper';
+// import Wrapper from './Wrapper';
 
-import CircularProgress from '@material-ui/core/CircularProgress';
-import CssBaseline from '@material-ui/core/CssBaseline';
+// import CircularProgress from '@material-ui/core/CircularProgress';
+// import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
-import Container from '@material-ui/core/Container';
+// import Container from '@material-ui/core/Container';
 
 import Rating from '@material-ui/lab/Rating';
 import Box from '@material-ui/core/Box';
 
 
-function Detail() {
 
+function Detail() {
 
   return (
     <div>
-    <Box component="fieldset" mb={3} borderColor="transparent">
-      <Typography component="legend">Pristine</Typography>
-      <Rating name="pristine" value={null} />
-    </Box>
+      <Box component="fieldset" mb={3} borderColor="transparent">
+        <Typography component="legend">Pristine</Typography>
+        <Rating name="pristine" value={null} />
+      </Box>
     </div>
   );
-
 }
 
 export default Detail;

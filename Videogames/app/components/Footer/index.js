@@ -1,11 +1,7 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 
-import A from 'components/ALink';
-import Wrapper from './Wrapper';
-import messages from './messages';
-
-import Container from '@material-ui/core/Container';
+// import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import Box from '@material-ui/core/Box';
@@ -16,13 +12,14 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import Divider from '@material-ui/core/Divider';
 
-
+// import A from 'components/ALink';
+import Wrapper from './Wrapper';
+import messages from './messages';
 
 function Footer() {
   return (
     <Wrapper>
       <CssBaseline />
-
       <Grid container spacing={1}>
         <Grid container item xs={12} spacing={3}>
           <Grid item xs={6}>
