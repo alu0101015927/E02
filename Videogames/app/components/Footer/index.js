@@ -11,6 +11,11 @@ import Link from '@material-ui/core/Link';
 import Box from '@material-ui/core/Box';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Grid from '@material-ui/core/Grid';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+
+
 
 function Footer() {
   return (
@@ -20,12 +25,12 @@ function Footer() {
       <Grid container spacing={1}>
         <Grid container item xs={12} spacing={3}>
           <Grid item xs={6}>
-            <Typography color="red" align="center" clone>
+            <Typography align="center" clone>
               Quienes somos
             </Typography>
           </Grid>
           <Grid item xs={6}>
-            <Typography color="red" align="center" clone>
+            <Typography align="center" clone>
               Ubicacion
             </Typography>
           </Grid>
@@ -33,8 +38,10 @@ function Footer() {
         <Grid container item xs={12} spacing={3}>
           <Grid item xs={6}>
             <section>
-              <Box component="span" m={1} color="primary.main" bgcolor="text.hint">
-                <FormattedMessage {...messages.about} />
+              <Box component="span" m={1}>
+                <Typography align="center">
+                  Somos una página de videojuegos..
+                </Typography>
               </Box>
             </section>
           </Grid>
@@ -68,7 +75,8 @@ function Footer() {
           <Grid item xs={6}>
             <section>
               <Link href="https://twitter.com/">
-                <Typography align="center"> Twitter </Typography>
+
+                <Typography align="center"> <TwitterIcon/>Twitter </Typography>
                 <i className="fab fa-twitter" />
               </Link>
             </section>
@@ -78,7 +86,7 @@ function Footer() {
           <Grid item xs={6}>
             <section>
               <Link href="https://instagram.com/">
-                <Typography align="center"> Instagram </Typography>
+                <Typography align="center"> <InstagramIcon/>Instagram </Typography>
                 <i className="fab fa-instagram" />
               </Link>
             </section>
@@ -88,7 +96,7 @@ function Footer() {
           <Grid item xs={6}>
             <section>
               <Link href="https://linkedin.com/">
-                <Typography align="center"> LinkedIn </Typography>
+                <Typography align="center"><LinkedInIcon/> LinkedIn </Typography>
                 <i className="fab fa-linkedin" />
               </Link>
             </section>
