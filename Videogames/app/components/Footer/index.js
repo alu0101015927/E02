@@ -14,6 +14,7 @@ import Grid from '@material-ui/core/Grid';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import Divider from '@material-ui/core/Divider';
 
 
 
@@ -26,12 +27,12 @@ function Footer() {
         <Grid container item xs={12} spacing={3}>
           <Grid item xs={6}>
             <Typography align="center" clone>
-              Quienes somos
+              Quienes somos<Divider variant="inset" component="div" />
             </Typography>
           </Grid>
           <Grid item xs={6}>
             <Typography align="center" clone>
-              Ubicacion
+              Ubicacion<Divider variant="inset" component="div" />
             </Typography>
           </Grid>
         </Grid>
@@ -61,7 +62,7 @@ function Footer() {
         <Grid container item xs={12} spacing={3}>
           <Grid item xs={6}>
             <section>
-              <Typography align="center"> Contacto </Typography>
+              <Typography align="center"> Contacto<Divider variant="inset" component="div" /> </Typography>
             </section>
           </Grid>
           <Grid item xs={6}>
