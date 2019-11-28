@@ -108,6 +108,7 @@ function Footer() {
           </Grid>
           <Grid item xs={3}>
             <section>
+              <Divider variant="inset" component="div" />
               <Typography color="red" align="center" clone>
                 <FormattedMessage color="red" align="center" {...messages.licencia} />
               </Typography>
