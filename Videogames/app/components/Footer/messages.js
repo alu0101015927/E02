@@ -18,7 +18,7 @@ export default defineMessages({
   map: {
     id: `${scope}.map`,
     defaultMessage: `
-    Ubicacion: {ubic}
+    {ubic}
     Camino San Francisco de Paula {ubic1}
     `,
   },
