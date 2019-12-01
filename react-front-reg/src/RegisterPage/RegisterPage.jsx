@@ -1,10 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-
+import ImagePicker from 'react-image-picker'
+//import '../_constants/profile_picture/index.css';
+//import { imageList } from '../_constants/profile_picture/random_profile_picture.js';
 import { userActions } from '../_actions';
 
-class RegisterPage extends React.Component {
+import imageList from "../_constants/profile_picture/index";
+import { styles } from "../_constants/profile_picture/index";
+
+
+export class RegisterPage extends React.Component {
     constructor(props) {
         super(props);
 
@@ -15,6 +21,8 @@ class RegisterPage extends React.Component {
                 email: '',
                 password: '',
                 email_regEx: '/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/',
+                image_text: '',
+                image_photo: null,
             },
             submitted: false,
             errors: false,
@@ -23,6 +31,17 @@ class RegisterPage extends React.Component {
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.onPick = this.onPick.bind(this);
+    }
+
+    onPick(image) {
+        const { user } = this.state;
+        this.setState({
+            user: {
+                ...user,
+                image_photo : image,
+            }
+        });
     }
 
     handleChange(event) {
@@ -38,17 +57,6 @@ class RegisterPage extends React.Component {
                 return 'Only letters';    
             }        
         }
-
-        /*else if(name == "email" && value !== ''){             // use patterns in input html
-            if(!email_regEx.test(String(value).toLowerCase())){
-                this.setState({
-                    errors: true,
-                    error_type : 'Invalid email address',
-                })
-                return 'Invalid email';
-            }
-        }*/
-        
         this.setState({
             user: {
                 ...user,
@@ -62,7 +70,7 @@ class RegisterPage extends React.Component {
 
         this.setState({ submitted: true });
         const { user } = this.state;
-        if (user.name && user.username && user.email && user.password) {
+        if (user.name && user.username && user.email && user.password && user.image_photo) {
             this.props.register(user);
         }
     }
@@ -83,7 +91,7 @@ class RegisterPage extends React.Component {
                     </div>
                     <div className={'form-group' + (submitted && !user.email ? ' has-error' : '')}>
                         <label htmlFor="email">Email</label>
-                        <input placeholder = "user@gmail.com" minLength = "7" maxLength = "25" type="text" className="form-control" name="email" value={user.email} onChange={this.handleChange} />
+                        <input type="email" placeholder = "user@gmail.com" minLength = "7" maxLength = "25" className="form-control" name="email" value={user.email} onChange={this.handleChange} />
                         {submitted && !user.email &&
                             <div className="help-block">Email is required</div>
                         }
@@ -102,6 +110,17 @@ class RegisterPage extends React.Component {
                             <div className="help-block">Password is required</div>
                         }
                     </div>
+
+                    <div className={'form-group' + (submitted && !user.image_photo ? ' has-error' : '')}>
+                        <label htmlFor="profile-picture">Default Profile Picture</label>
+                        <ImagePicker 
+                            images={imageList.map((image, i) => ({src: image, value: i+1,}))}                      //save title or path of picture
+                            onPick={this.onPick}
+                        />
+                        {submitted && !user.image_photo && <div className="help-block">Default image is required</div>}
+                        
+                    </div>
+
                     <div className="form-group">
                         <button className="btn btn-primary">Register</button>
                         {registering && 
@@ -115,6 +134,11 @@ class RegisterPage extends React.Component {
     }
 }
 
+RegisterPage.defaultProps = {
+    imageList: imageList
+}
+
+
 function mapState(state) {
     const { registering } = state.registration;
     return { registering };
@@ -125,4 +149,4 @@ const actionCreators = {
 }
 
 const connectedRegisterPage = connect(mapState, actionCreators)(RegisterPage);
-export { connectedRegisterPage as RegisterPage };
+export { connectedRegisterPage as CRegisterPage };
