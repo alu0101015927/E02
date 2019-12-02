@@ -26,6 +26,7 @@ before_install:
 notifications:
   email:
     on_failure: change
+  slack: 'sytw:zOwATE9j5xq2yo6Jqb8y6YtR#e02'
 
 after_success: 'npm run coveralls'
 
