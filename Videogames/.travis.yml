@@ -1,6 +1,7 @@
 language: node_js
 
 node_js:
+  - "stable"
   - 'node'
   - 'lts/*'
 
@@ -8,6 +9,14 @@ script:
   - node ./internals/scripts/generate-templates-for-linting
   - npm test -- --maxWorkers=4
   - npm run build
+
+deploy:
+  provider: surge
+  skip_cleanup: true
+  domain: <my_name_here>.surge.sh
+  project: ./build/
+on:
+  branch: travis
 
 before_install:
   - export CHROME_BIN=chromium-browser
