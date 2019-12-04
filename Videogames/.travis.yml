@@ -16,7 +16,7 @@ deploy:
   domain: <my_name_here>.surge.sh
   project: ./build/
 on:
-  branch: travis
+  branch: master 
 
 before_install:
   - export CHROME_BIN=chromium-browser
