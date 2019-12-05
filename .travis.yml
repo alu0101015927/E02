@@ -5,9 +5,11 @@ node_js:
   - 'lts/*'
 
 script:
-  - node ./internals/scripts/generate-templates-for-linting
-  - npm test
+  - npm run test
   - npm run build
+
+before_install:
+  - npm install
 
 notifications:
   email:
