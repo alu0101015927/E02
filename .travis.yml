@@ -9,6 +9,7 @@ script:
   - npm run build
 
 before_install:
+  - cd Videogames
   - npm install
 
 notifications:
