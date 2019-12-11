@@ -27,7 +27,7 @@ module.exports = {
   ],
   setupFiles: ['raf/polyfill'],
   testRegex: 'tests/.*\\.test\\.js$',
-  snapshotSerializers: [],
+  snapshotSerializers: ["enzyme-to-json/serializer"],
   eslint: {
     enable: false,
   },
