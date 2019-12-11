@@ -39,7 +39,7 @@
     "lint:staged": "lint-staged",
     "pretest": "npm run test:clean && npm run lint",
     "test:clean": "rimraf ./coverage",
-    "test": "cross-env NODE_ENV=test jest --coverage",
+    "test": "jest",
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "prettify": "prettier --write"
@@ -87,6 +87,7 @@
     "intl": "1.2.5",
     "invariant": "2.2.4",
     "ip": "1.1.5",
+    "jest": "^24.9.0",
     "lodash": "4.17.11",
     "metro-react-native-babel-preset": "^0.57.0",
     "minimist": "1.2.0",
