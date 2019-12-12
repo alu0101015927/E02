@@ -11,8 +11,8 @@ script:
 before_install:
   - cd Videogames
   - npm install
-
 notifications:
+  slack: proyecto-sytw:cVWM9OYylOMopcZIydrXs9yf
   email:
     on_failure: change
 
