@@ -1,18 +1,8 @@
 import React from 'react';
-import { render } from 'react-testing-library';
-import { IntlProvider } from 'react-intl';
+const greetme = "Hello!";
 
-import HomePage from '../index';
-
-describe('<HomePage />', () => {
-  it('should render and match the snapshot', () => {
-    const {
-      container: { firstChild },
-    } = render(
-       <IntlProvider locale="en">
-         <HomePage />
-       </IntlProvider>,
-    );
-     expect(firstChild).toMatchSnapshot();
+describe("Our first test!", () => {
+  it("Should say hello!", () => {
+    expect(greetme).toBe("Hello!");
   });
 });
