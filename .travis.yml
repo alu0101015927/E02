@@ -13,6 +13,7 @@ before_install:
   - npm install
 
 notifications:
+  slack: 'sytw:zOwATE9j5xq2yo6Jqb8y6YtR#e02'
   email:
     on_failure: change
 
