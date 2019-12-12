@@ -1,0 +1,30 @@
+language: node_js
+node_js:
+- stable
+- node
+- lts/*
+script:
+- node ./internals/scripts/generate-templates-for-linting
+- npm test -- --maxWorkers=4
+- npm run build
+deploy:
+  provider: surge
+  skip_cleanup: true
+  domain: "<my_name_here>.surge.sh"
+  project: "./build/"
+true:
+  branch: master
+before_install:
+- export CHROME_BIN=chromium-browser
+- export DISPLAY=:99.0
+- sh -e /etc/init.d/xvfb start
+notifications:
+  slack:
+    matrix:
+    - sytw:zOwATE9j5xq2yo6Jqb8y6YtR#2019-e02
+    rooms:
+      secure: HvhS+jC1aV6bVMgLwkBZn1Wledf6Qqh9/qicAzJQ0FqJdcYmLDB9RqyZtR/ZXpgV1lNkpLiL0KvqyjvIegCCo81WuP8ICQ0taNXG7VawGWv//9OO47eTCZS9v6+Z43JFzM2V2WSuovx4OKrvS1MzKn3LZ5MG9SUaUki07TeHLBgKdds5h9CeBi+/payHk2pwGK5lh7FUqGzwzoat+xyTXkFqvMaxNlNUcEqCouCOxEPhuDMUD+0lXpwYPyMJ9jJVMp2hSdnmcaqLXX5NUBDXz74PS55j9bppeEd5H3Qmz7UuZYrgsR1pecVblqCdoAPAjKL6NSploOd/fHSetQMYo4DvdZDljrbe/lsuc3czu9NnFVnHZ6SZObbW0tK3RYB/HDo+uEEU1UVTXZ2KhdK4VQ/XRcmPaQYFWYb01IzKyi6XnyN7xE9kpZH5y+k8zml1+dRYi/Cn12UVtMiq+6Oiddgd4Q60bFurOKgMMJBD4yD8+lCJBQHjtj5Qa5SokW98DV7oTHmY6hQK8Md15VQ26Ahh36cSy26DVePKSpT+6b/Y5BJR1SSA0bq+Qtu5EZ5WdOp6uCRRAvjLIbsfiB5FooBtlXDFv/1/l3WKlocgGhyNTPpaUrZK3jnERGTscsXGqW5EM34c/of15+DJt/jhj3Ul91gUopKMgk03Ct6EQ6w=
+after_success: npm run coveralls
+cache:
+  directories:
+  - node_modules
