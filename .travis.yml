@@ -4,10 +4,16 @@ node_js:
   - 'node'
   - 'lts/*'
 
+addons:
+  sonarcloud:
+    organization: "sytw2019" # the key of the org you chose at step #3
+    token: 2daae18682f662535c600a6e435650eef789b62b
+
 script:
   - npm run test
   - npm run build
-
+  - sonar-scanner
+  
 before_install:
   - cd Videogames
   - npm install
