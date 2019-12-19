@@ -8,7 +8,7 @@ addons:
   sonarcloud:
     organization: "sytw2019"
     token:
-      SONAR_TOKEN
+      secure: ${SONAR_TOKEN}
       
 script:
   - npm run test
