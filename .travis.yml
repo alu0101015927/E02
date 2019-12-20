@@ -3,12 +3,6 @@ dist: trusty
 node_js:
   - 'node'
   - 'lts/*'
-
-addons:
-  sonarcloud:
-    organization: "sytw2019"
-    token:
-      secure: ${SONAR_TOKEN}
       
 script:
   - npm run test
@@ -28,3 +22,9 @@ after_success: 'npm run coveralls'
 cache:
   directories:
     - node_modules
+    
+addons:
+  sonarcloud:
+    organization: "sytw2019"
+    token:
+      secure: ${SONAR_TOKEN} 
