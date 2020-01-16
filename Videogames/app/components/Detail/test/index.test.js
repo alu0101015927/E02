@@ -1,30 +1,29 @@
 import React from 'react';
 import { render } from 'react-testing-library';
 
-import Footer from '../index';
+import Detail from '../index';
 
 const renderComponent = () =>
   render(
-    <Footer></Footer>
+    <Detail></Detail>,
   );
 
-describe('<Footer />', () => {
-    it('should render an <Wrapper> tag', () => {
+describe('<Detail />', () => {
+    it('should render an <div> tag', () => {
       const { container } = renderComponent();
-      expect(container.querySelector('Wrapper')).not.toBeNull();
+      expect(container.querySelector('div')).not.toBeNull();
     });
-    it('should render an <CSSBaseLine> tag', () => {
+    it('should render an <Box> tag', () => {
         const { container } = renderComponent();
-        expect(container.querySelector('CSSBaseLine')).not.toBeNull();
+        expect(container.querySelector('Box')).not.toBeNull();
     });
     it('should render an <Typography> tag', () => {
         const { container } = renderComponent();
         expect(container.querySelector('Typography')).not.toBeNull();
     });
-    it('should render an <Grid> tag', () => {
+    it('should render an <Rating> tag', () => {
         const { container } = renderComponent();
-        expect(container.querySelector('Grid')).not.toBeNull();
+        expect(container.querySelector('Rating')).not.toBeNull();
     });
 
 });
-
