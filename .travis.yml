@@ -1,12 +1,13 @@
 language: node_js
-
+dist: trusty
 node_js:
   - 'node'
   - 'lts/*'
-
+      
 script:
   - npm run test
   - npm run build
+  - sonar-scanner -X
 
 before_install:
   - cd Videogames
@@ -21,3 +22,9 @@ after_success: 'npm run coveralls'
 cache:
   directories:
     - node_modules
+    
+addons:
+  sonarcloud:
+    organization: "sytw2019"
+    token:
+      secure: ${PRUEBA} 
