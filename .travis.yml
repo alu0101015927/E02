@@ -7,7 +7,7 @@ node_js:
 script:
   - npm run test
   - npm run build
-  - sonar-scanner
+  - sonar-scanner -X
 
 before_install:
   - cd Videogames
