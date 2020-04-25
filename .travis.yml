@@ -3,11 +3,11 @@ dist: trusty
 node_js:
   - 'node'
   - 'lts/*'
-      
+
 script:
   - npm run test
   - npm run build
-  - sonar-scanner -X
+  - sonar-scanner
 
 before_install:
   - cd Videogames
@@ -22,9 +22,9 @@ after_success: 'npm run coveralls'
 cache:
   directories:
     - node_modules
-    
+
 addons:
   sonarcloud:
     organization: "sytw2019"
     token:
-      secure: ${PRUEBA} 
+      secure: ${PRUEBA}
