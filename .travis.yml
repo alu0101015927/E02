@@ -1,5 +1,5 @@
 language: node_js
-
+dist: trusty
 node_js:
   - 'node'
   - 'lts/*'
@@ -12,8 +12,13 @@ addons:
 script:
   - npm run test
   - npm run build
+<<<<<<< HEAD
   - sonar-scanner
   
+=======
+  - sonar-scanner -X
+
+>>>>>>> 4a7c62a53ef87b759469556cc160bf4bd27bf33a
 before_install:
   - cd Videogames
   - npm install
@@ -28,3 +33,9 @@ after_success: 'npm run coveralls'
 cache:
   directories:
     - node_modules
+
+addons:
+  sonarcloud:
+    organization: "sytw2019"
+    token:
+      secure: ${PRUEBA}
