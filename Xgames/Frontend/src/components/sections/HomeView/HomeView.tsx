@@ -1,16 +1,14 @@
-import React from 'react';
-import './assets/css/App.css';
-
-import Header from './components/Header/Header.tsx';
-import Slider from './components/Slider/Slider.tsx';
-import Sidebar from './components/SideBar/SideBar.tsx';
-import Footer from './components/Footer/Footer.tsx';
-import Card from './components/Card/Card.tsx'
+import React, {Fragment} from 'react';
+import Header from '../../Header/Header';
+import Slider from '../../Slider/Slider';
+import Sidebar from '../../SideBar/SideBar';
+import Footer from '../../Footer/Footer';
+import Card from '../../Card/Card';
 import { Grid } from '@material-ui/core';
 
-function App() {
+const HomeView: React.FC = () => {
   return (
-    <div className="App">
+    <div>
       <Header />
       <Slider />
       <Grid container alignContent='center' alignItems='flex-start' spacing={3} >
@@ -40,4 +38,4 @@ function App() {
   );
 }
 
-export default App;
+export default HomeView;

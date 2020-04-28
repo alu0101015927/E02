@@ -2,7 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Theme, Container, Typography, Box } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
-import classes from '*.module.css';
 
 const useStyles = makeStyles((theme: Theme) => ({
     bar: {
