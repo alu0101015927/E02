@@ -11,12 +11,12 @@
     padding-right: 3px;
     margin: 0;
     display: inline;
+    float:right;
 }
   
 .cardContent {
     padding-bottom: 40px;
     font-size: 15px;
-    word-break: normal;
     line-height: 1.8;
 }
 
@@ -26,6 +26,8 @@
     color: grey;
     margin: 0;
     display: inline;
+    float:right;
+
 }
 
 .CardGameCategory{
@@ -34,5 +36,6 @@
     color: grey;
     margin: 0;
     display: inline;
+    float:left;
     
 }
