@@ -1,0 +1,18 @@
+.buttonCard {
+    border: none;
+    box-shadow: none;
+    font-family: inherit;
+    background-color:transparent;
+    color: #341cac;
+    font-size: 15px;
+    transition:.25s;
+    display: flex;
+    align-items: flex-start;
+
+}
+.buttonIcon{
+    padding-right:4px;
+}
+.buttonCard:hover {
+    transform: translate(10px, 0);
+}
