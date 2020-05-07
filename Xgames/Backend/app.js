@@ -1,4 +1,4 @@
-'use strict'
+/*'use strict'
 
 // cargar modulos de node para crear servidor
 var express = require('express');
@@ -30,4 +30,4 @@ app.use('/',userrouter);
 
 
 //Exportar modulo (fichero actual)
-module.exports = app;
+module.exports = app;*/
