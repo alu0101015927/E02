@@ -1,4 +1,4 @@
-'use strict'
+/*'use strict'
 
 var mongoose = require('mongoose');
 var app = require('./app');
@@ -12,4 +12,4 @@ mongoose.connect('mongodb://localhost:27017/api_rest_xgames',{ useNewUrlParser: 
     app.listen(port,() => {
         console.log('Servidor corriendo en http://localhost:'+port);
     })
-});
+});*/

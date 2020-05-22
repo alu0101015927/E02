@@ -7,7 +7,7 @@ var path = require('path');
 var User = require('../models/user');
 
 var controller = {
-
+    /*
     datosUser: (req,res) => {
         var hola = req.body.hola;
 
@@ -198,7 +198,7 @@ var controller = {
             });
         })
     },
-
+    */
     upload: (req,res) => {
         //configurar el modulo connect multiparty router/user.js
 
