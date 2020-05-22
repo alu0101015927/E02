@@ -1,0 +1,10 @@
+
+.SliderHeader{
+    align-items: center;
+}
+
+@media (max-width: 590px){
+    .SliderHeader{
+        display: none;
+    }
+}

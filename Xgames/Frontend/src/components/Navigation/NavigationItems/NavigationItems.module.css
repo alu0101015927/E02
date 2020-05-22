@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .NavigationItems{
     margin: 0;
     padding: 0;
@@ -26,4 +27,34 @@
     .UserProfile{
         color: white;
     }
+=======
+.NavigationItems{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow:column;
+    align-items: center;
+    height: 100%;
+}
+
+.UserProfile{
+    padding-right: 5px;
+    padding-left: 5px;
+    color: black;
+    display: flex;
+    transform: scale(1.5);
+    flex-flow: column;
+    align-items: center;
+}
+
+@media (min-width:500px){
+    .NavigationItems{
+        flex-flow: row;
+
+    }
+    .UserProfile{
+        color: white;
+    }
+>>>>>>> origin/dev-vlad
 }
