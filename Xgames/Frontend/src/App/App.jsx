@@ -12,7 +12,7 @@ import { CRegisterPage } from '../components/sections/RegisterPage';
 
 import HomeView from '../components/sections/HomeView/HomeView';
 import SearchView from '../components/sections/SearchView/SearchView';
-import NewGameView from '../components/sections/NewGameView/NewGameView';
+//import NewGameView from '../components/sections/NewGameView/NewGameView';
 
 class App extends React.Component {
     constructor(props) {
@@ -38,7 +38,7 @@ class App extends React.Component {
                                     <Route exact path="/"> <HomeView/></Route>
                                     <Route path="/login" component={CLoginPage} />
                                     <Route path="/register" component={CRegisterPage} />
-                                    <Route path="/newgame"><NewGameView /></Route>
+                                    
                                     <Route path="/search"><SearchView /></Route>
                                     <Redirect from="*" to="/" />
                                 </Switch>

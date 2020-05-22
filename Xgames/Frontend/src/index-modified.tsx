@@ -6,7 +6,7 @@ import HomeView from './components/sections/HomeView/HomeView';
 import SignUpView from './components/sections/SignUpView/SignUpView';
 import RegisterView from './components/sections/RegisterView/RegisterView';
 import SearchView from './components/sections/SearchView/SearchView';
-import NewGameView from './components/sections/NewGameView/NewGameView';
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -22,7 +22,7 @@ ReactDOM.render(
           <RegisterView />
         </Route>
         <Route path="/newgame">
-          <NewGameView />
+          
         </Route>
         <Route path="/search">
           <SearchView />

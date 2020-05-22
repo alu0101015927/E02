@@ -63,7 +63,7 @@ const ProductCard: React.FC = () => {
             </CardContent>
           </CardActionArea>
           <CardActions>
-            <ResponsiveDialog />
+            
           </CardActions>
         </Card>
       </Grid>

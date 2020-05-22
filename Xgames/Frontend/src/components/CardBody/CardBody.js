@@ -15,7 +15,7 @@ class CardBody extends Component {
           <h2>{this.props.title}</h2>
           
           <p className={classes.cardContent}>{this.props.text}</p>
-          <CardButton/>
+          {/*<CardButton/>*/}
         </div>
       )
     }
