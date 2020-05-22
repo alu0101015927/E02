@@ -39,7 +39,7 @@ const SideBar: React.FC = () => {
             <aside id="sidebar" >
                 <div id="nav-blog" className={classes.news} >
                     <h3 className={classes.h3}>Ver últimas noticias sobre Videojuegos</h3>
-                    <a className="btn btn-success">Noticias</a>
+                    <a href="#index" className="btn btn-success">Noticias</a>
                 </div>
                 <div id="search" className="sidebar-item">
                     <h3 className={classes.h3}>Buscador</h3>

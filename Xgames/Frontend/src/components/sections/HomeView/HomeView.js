@@ -10,33 +10,14 @@ import axios from 'axios';
 
 
 export default class HomeView extends React.Component {
-
-  state = {
-    games: [],
+  return(){
+    <Header />
+    <Slider />
+    <Sidebar />
+    <Footer />
+    <Card />
   }
 
-  componentWillMount() {
-    this.getGames();
-  }
-
-  getGames = () => {
-    axios.get("http://localhost:3900/getGames")
-      .then(res => {
-        const games = res.data;
-        this.setState({ games })
-        console.log(this.state);
-      });
-  }
-  let games = this.state.games;
-  render() {
-    return (
-    <ul>
-      { games.map(game => {
-        <h1>game.title</h1>
-      })}
-    </ul>
-    )
-  }
 }
 
 
