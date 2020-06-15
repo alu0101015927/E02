@@ -3,8 +3,8 @@ dist: trusty
 node_js:
 - 'node'
 script:
-# - npm run test
-# - npm run build
+- npm run test
+- npm run build
 # - sonar-scanner -X
 before_install:
 - cd Videogames
@@ -13,7 +13,7 @@ before_install:
 notifications:
   email:
     on_failure: change
-# after_success: npm run coveralls
+after_success: npm run coveralls
 cache:
   directories:
   - node_modules
