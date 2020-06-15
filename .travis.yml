@@ -27,4 +27,4 @@ addons:
   sonarcloud:
     organization: "alu0101015927"
     token:
-      secure: ${PRUEBA}
+      secure: ${aluprueba}
