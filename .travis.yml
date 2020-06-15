@@ -23,8 +23,8 @@ cache:
   directories:
     - node_modules
 
-# addons:
-#   sonarcloud:
-#     organization: "sytw2019"
-#     token:
-#       secure: ${PRUEBA}
+addons:
+  sonarcloud:
+    organization: "alu0101015927"
+    token:
+      secure: ${PRUEBA}
