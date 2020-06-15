@@ -9,6 +9,7 @@ script:
 before_install:
 - cd Videogames
 - npm install
+- cd ..
 notifications:
   email:
     on_failure: change
