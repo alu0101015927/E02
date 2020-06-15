@@ -1,31 +1,24 @@
 language: node_js
 dist: trusty
 node_js:
-  - 'node'
-  - 'lts/*'
-
+- node
+- lts/*
 script:
-  - npm run test
-  - npm run build
-  - sonar-scanner -X
-
+- npm run test
+- npm run build
+- sonar-scanner -X
 before_install:
-  - cd Videogames
-  - npm install
-
+- cd Videogames
+- npm install
 notifications:
   email:
     on_failure: change
-
-after_success: 'npm run coveralls'
-
+after_success: npm run coveralls
 cache:
   directories:
-    - node_modules
-
+  - node_modules
 addons:
   sonarcloud:
-    organization: "alu0101015927"
+    organization: alu0101015927
     token:
-      secure: "ixt323HeH6dSWyaJm3QiYHQ+aoh6BQI3m9xbeUUU4UQzvaUTCt6dH8LqQ7nj3tW4kg4Pp+6PCx7kYZNT9C2LsoWlGw24jpWmpcwWGDdCMQ37wZs1v6A7jFxHOik1bABdS5J+H29Cv2x5slBVQkl3KUbgEEebN+Of8FX80h7GySUs3pRtcm9xUOSFuNGihMXHxtyYNkgsETyWXTxfe7ijOj39ZWwSUstzyKEHhnK54n2P85d+Jfdsg4MKf+QYvn5M9bC/6RdzuJ1+5IMROxCwDQjOn0GHQts8NtIWr4k7RQQxPeS8akvtp3Z3LWy9D9ShkZNezNVo7Ru6jvl5FcKUDUxFlKZGgMfvCGsMN8SLyNIsK2R7H4jMYL8vZzN9Rj3egtOdkjBe46UNd6FbLQjp/kaHALN0MIBa+m7Ve3OOf/njFc3T743AkS60Rw3AR6uZTLeLeiqbH3fuRibDPG8OE61KINeCngzLE/eaiPISTgSVL4J5iJWcuwtfSy7YgVHp54QKbn166uIVimvMdmEbkqSAaciqitpc/D+fe7O5Xxtgi0j4N4gTv233bJVDLmHjGu1IXPF10B6wPvGPJMKfOSETMHUIGNE/PQlR4W3lYkUKGiR7yYdBLdO5lNzB27nIKHTgCVpe5oYpGvcW9V/kazRIseRutNGMI1GuWYle6nE="
-      # secure: ${SONAR_TOKEN}
+      secure: CCKoprmv+bj0FhdnjRjTe77k3yJcVHVMw5Cc7SsY+O1UwLX1H6f1YoJkx8+NKJS0uJ2O5cu4+O1xhBnzBU5yoLvSNkKAbsJUKxhTGVdygQ+NbXhxpRO3+OHEp8MbTOQUxIORW6HoB3VWSHXeO+2EPCawnYeHeRXoBWathcyYaiKp6S1HFPBzf4pgHzi11jFmO1P2g2NPAOcc/evvECtlzi9Qd8/0kAJZ7cEhbUUTV/da6us3v+TMc3cnwWfRMakNC0LU+eUGOVwiBrPVm2VSSpk8pkxe8KenmaCFxYkS8rB3b3Q1QRDalq0VQ+7OfvYRqEUiY/xx5GDTxTlpSSvOvHpKN3R8HNJZAR0vXavRU659sY7d0IA8RpM0fc9tYDrzqWW3ebJoIQr1TjqLNT8NBdhVEcGJ9QveLBu5AlcLzxz2X5+zgoV3nFDN6rqdD1ez5/nA4SSntjOVH9PkPm34nMO+83n+56jFQuTWGV+NOE56sdfH7mA6TtqJhP31VlX+vfr5w5bZh/jRcN6Jv/82rR6NAbJojnjsceNBbCkCU9KF8Mn+/HeoobVZ003UcKLNKJ0oxYsuKXuUbusZIBDvx5ut0dZ/CiWgF9ojYuJivrokwDO0tzvS+LzxxqeE+ytrR6LQUczgjs1LOR8haG23jHPmYA/u7wIWPoWdHajwEkI=
