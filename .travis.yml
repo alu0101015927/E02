@@ -4,12 +4,12 @@ node_js:
 - 'node'
 script:
 # - npm run test
-- npm run build
-# - sonar-scanner -X
+# - npm run build
+- sonar-scanner -X
 before_install:
 - cd Videogames
 - npm install
-# - cd ..
+- cd ..
 notifications:
   email:
     on_failure: change
