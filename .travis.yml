@@ -1,7 +1,8 @@
 language: node_js
 dist: trusty
 node_js:
-- 'node'
+- node
+- lts/*
 script:
 - npm run test
 - npm run build
@@ -10,6 +11,7 @@ before_install:
 - cd Videogames
 - npm install
 notifications:
+  slack: sytw:zOwATE9j5xq2yo6Jqb8y6YtR#2019-e02
   email:
     on_failure: change
 after_success: npm run coveralls
@@ -18,6 +20,6 @@ cache:
   - node_modules
 addons:
   sonarcloud:
-    organization: alu0101015927
+    organization: sytw2019
     token:
       secure: CCKoprmv+bj0FhdnjRjTe77k3yJcVHVMw5Cc7SsY+O1UwLX1H6f1YoJkx8+NKJS0uJ2O5cu4+O1xhBnzBU5yoLvSNkKAbsJUKxhTGVdygQ+NbXhxpRO3+OHEp8MbTOQUxIORW6HoB3VWSHXeO+2EPCawnYeHeRXoBWathcyYaiKp6S1HFPBzf4pgHzi11jFmO1P2g2NPAOcc/evvECtlzi9Qd8/0kAJZ7cEhbUUTV/da6us3v+TMc3cnwWfRMakNC0LU+eUGOVwiBrPVm2VSSpk8pkxe8KenmaCFxYkS8rB3b3Q1QRDalq0VQ+7OfvYRqEUiY/xx5GDTxTlpSSvOvHpKN3R8HNJZAR0vXavRU659sY7d0IA8RpM0fc9tYDrzqWW3ebJoIQr1TjqLNT8NBdhVEcGJ9QveLBu5AlcLzxz2X5+zgoV3nFDN6rqdD1ez5/nA4SSntjOVH9PkPm34nMO+83n+56jFQuTWGV+NOE56sdfH7mA6TtqJhP31VlX+vfr5w5bZh/jRcN6Jv/82rR6NAbJojnjsceNBbCkCU9KF8Mn+/HeoobVZ003UcKLNKJ0oxYsuKXuUbusZIBDvx5ut0dZ/CiWgF9ojYuJivrokwDO0tzvS+LzxxqeE+ytrR6LQUczgjs1LOR8haG23jHPmYA/u7wIWPoWdHajwEkI=
